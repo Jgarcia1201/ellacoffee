@@ -6,9 +6,13 @@ const Home = () => {
      const coffeeVid: any = require('../../assets/home/coffee.mp4');
 
      useEffect(() => {
+          slowVideo();
+     }, [])
+
+     const slowVideo = () => {
           const vid: any = document.getElementById('coffeeVid')!;
           vid.playbackRate = 0.75
-     }, [])
+     }
 
      return (
           <div id="homeContainer" className='container-fluid'>
