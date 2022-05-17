@@ -26,9 +26,8 @@ const Home = () => {
 
                {/* MAIN CONTENT START */}
                <div id="homeContent">
-                    
-               </div>
 
+               </div>
                {/* MAIN CONTENT END */}
                
           </div>
