@@ -7,8 +7,7 @@ const Home = () => {
 
      useEffect(() => {
           const vid: any = document.getElementById('coffeeVid')!;
-          vid.playbackRate = 0.75;
-
+          vid.playbackRate = 0.75
      }, [])
 
      return (
@@ -24,6 +23,13 @@ const Home = () => {
                     </div>
                </div>
                {/* HEADING END */}
+
+               {/* MAIN CONTENT START */}
+               <div id="homeContent">
+                    
+               </div>
+
+               {/* MAIN CONTENT END */}
                
           </div>
      )
