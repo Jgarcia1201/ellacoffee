@@ -1,0 +1,35 @@
+#ellaFooter {
+     background-color: rgb(20, 20, 20);
+     height: 40px;
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#footerDisplay {
+     width: 95%;
+     height: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     font-size: 14px;
+}
+
+.footerLink {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#footerIg {
+     height: 26px;
+}
+
+.footerText {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+}

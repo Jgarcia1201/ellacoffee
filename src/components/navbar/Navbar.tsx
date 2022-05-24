@@ -18,7 +18,7 @@ const Navbar = () => {
                   <a className="nav-link" href="#">Contact Us</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">Order Online</a>
+                  <a className="nav-link" href='#'>Order Online</a>
                 </li>
               </ul>
             </div>

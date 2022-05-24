@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import './Home.css';
 
+import Footer from '../../components/footer/Footer';
+
 const Home = () => {
 
      const coffeeVid: any = require('../../assets/home/coffee.mp4');
@@ -31,8 +33,44 @@ const Home = () => {
                {/* MAIN CONTENT START */}
                <div id="homeContent">
 
+                    <div id="homeContentHeader">
+                         <div id="homeContentTitle">
+                              Fresh Coffee In The Heart of Houston
+                         </div>
+
+                         <div id="homeContentTextBox">
+                              <p id="homeContentText">
+                              Ella Coffee is a mobile trailer serving the Houston TX area. Our trailer serves specialty coffee and baked pastries.
+                              We make drinks using the best ingredients sourced from local producers. Come visit us today!
+                              </p>
+                         </div>
+                    </div>
+
                </div>
                {/* MAIN CONTENT END */}
+
+               {/* LINK SECTION START */}
+               <div id="linkSection">
+
+                    <div id="linkBox">
+
+                         <div id="locationBox">
+                              <a><button className='linkButton'>EVENTS</button></a>
+                         </div>
+
+                         <div id="eventsBox">
+                              <a><button className='linkButton'>LOCATION</button></a>
+                         </div>
+
+
+                    </div>
+
+               </div>
+               {/* LINK SECTION END */}
+
+               {/* FOOTER START */}
+               <Footer />
+               {/* FOOTER END */}
                
           </div>
      )
