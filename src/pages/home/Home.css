@@ -14,7 +14,7 @@
 /* HEADING START */
 #homeHeading {
      width: 100%;
-     height: 60vh;
+     height: 70vh;
 }
 
 #videoBox {
@@ -59,27 +59,33 @@
 
 /* CONTENT START */
 #homeContent {
-     background-color: rgb(18, 18, 18);
+     background-color: rgb(26, 26, 26);
      width: 100%;
      height: 500px;
      display: flex;
      justify-content: center;
      align-items: center;
-     background-image: url("../../assets/home/homeAboutBack.jpg");
+     padding: 15px;
 }
 
 #homeContentHeader {
-     height: 80%;
-     width: 60%;
+     height: 50%;
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
 }
 
 #homeContentTitle {
      height: 30%;
-     width: 100%;
+     width: 65%;
      display: flex;
      align-items: center;
      justify-content: center;
      font-size: 2rem;
+     color: black;
+     text-align: center;
      color: white;
 }
 
@@ -89,12 +95,25 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     padding: 20px;
 }
 
 #homeContentText {
-     width: 100%;
+     width: 80%;
      height: 70%;
      color: white;
+}
+
+#homeContentMapBox {
+     width: 60%;
+     height: 80%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#homeMap {
+     width: 90%;
 }
 
 /* CONTENT END */
@@ -165,12 +184,38 @@
           left: 10%;
      }
 
+     #homeContent {
+          flex-direction: column;
+     }
+
      #headingTextHome {
           font-size: 1.3rem;
           left: 5%;
           top: 37%;
      }
 
+     #homeContentHeader {
+          width: 90%;
+          height: 100%;
+          padding-top: 25px;
+     }
+
+     #homeContentTitle {
+          width: 100%;
+     }
+
+     #homeContentText {
+          width: 100%;
+     }
+
+     #homeContentMapBox {
+          width: 100%;
+     }
+
+     #homeMap {
+          width: 100%;
+     }
+     
      #linkSection {
           background-position-y: 0;
      }

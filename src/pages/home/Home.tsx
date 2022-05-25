@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import './Home.css';
 
+import map from '../../assets/home/map4home.jpg';
+
 import Footer from '../../components/footer/Footer';
 
 const Home = () => {
@@ -46,6 +48,10 @@ const Home = () => {
                               We make drinks using the best ingredients sourced from local producers. Come visit us today!
                               </p>
                          </div>
+                    </div>
+
+                    <div id="homeContentMapBox">
+                              <img src={map} id="homeMap"></img>
                     </div>
 
                </div>
