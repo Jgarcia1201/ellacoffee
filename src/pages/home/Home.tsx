@@ -4,7 +4,9 @@ import './Home.css';
 import Footer from '../../components/footer/Footer';
 
 const Home = () => {
-
+     
+     // Importing coffee video. Typescript is weird about importing videos. I'm not going
+     // to use many more, if any. So this is simpler.
      const coffeeVid: any = require('../../assets/home/coffee.mp4');
 
      useEffect(() => {
