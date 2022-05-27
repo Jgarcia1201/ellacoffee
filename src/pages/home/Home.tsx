@@ -3,6 +3,8 @@ import './Home.css';
 
 import map from '../../assets/home/map4home.jpg';
 
+import logo from '../../assets/home/ellacoffeepng.png';
+
 import Footer from '../../components/footer/Footer';
 
 const Home = () => {
@@ -26,7 +28,8 @@ const Home = () => {
                {/* HEADING START */}
                <div id="homeHeading">
                     <div id="videoBox">
-                         <h3 id="headingTextHome">We Are Italian, Everything Else is Local</h3>
+                         {/* <h3 id="headingTextHome">We Are Italian, Everything Else is Local</h3> */}
+                         <img src={logo} alt="ella coffee logo" id="ellaCoffeeLogo" />
                          <a href="https://www.clover.com/online-ordering/ella-coffee-houston"><button id="orderNowHome">ORDER NOW</button></a>
                          <video id="coffeeVid" src={coffeeVid} autoPlay={true} muted={true} loop />
                          <button id="orderNowHome">ORDER NOW</button>
@@ -36,6 +39,11 @@ const Home = () => {
 
                {/* MAIN CONTENT START */}
                <div id="homeContent">
+
+                    {/* CREATE ABOUT ME HEADER. SHOULD BE TWO VERTICAL DIVS INSIDE HOME CONTENT.
+                         MAKE IT CHANGE TO "LOCATE US" OR SOMETHING WHEN THE MAP IS HOVERED OVER. */}
+                         
+                    {/* <h1 id="aboutMe">About Us</h1> */}
 
                     <div id="homeContentHeader">
                          <div id="homeContentTitle">
