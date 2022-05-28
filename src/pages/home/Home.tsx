@@ -42,25 +42,38 @@ const Home = () => {
 
                     {/* CREATE ABOUT ME HEADER. SHOULD BE TWO VERTICAL DIVS INSIDE HOME CONTENT.
                          MAKE IT CHANGE TO "LOCATE US" OR SOMETHING WHEN THE MAP IS HOVERED OVER. */}
-                         
-                    {/* <h1 id="aboutMe">About Us</h1> */}
-
-                    <div id="homeContentHeader">
-                         <div id="homeContentTitle">
-                              Fresh Coffee In The Heart of Houston
-                         </div>
-
-                         <div id="homeContentTextBox">
-                              <p id="homeContentText">
-                              Ella Coffee is a mobile trailer serving the Houston TX area. Our trailer serves specialty coffee and baked pastries.
-                              We make drinks using the best ingredients sourced from local producers. Come visit us today!
-                              </p>
-                         </div>
+                    
+                    <div id="homeContentHeadBox">
+                         <h1 id="aboutMe">About Us</h1>
                     </div>
 
-                    <div id="homeContentMapBox">
-                              <img src={map} id="homeMap"></img>
+
+                    <div id="homeContentBodyBox">
+
+                         <div id="homeContentBody">
+
+                              <div id="homeContentMapBox">
+                                   <img src={map} id="homeMap"></img>
+                              </div>
+
+                              <div id="homeContentBodyTextBox">
+
+                                   <h3 id="homeContentBodyTitle">
+                                        Located In The Heart of Houston
+                                   </h3>
+
+                                   <p id="homeContentBodyText">
+                                   Ella Coffee is a mobile trailer serving the Houston TX area. Our trailer serves specialty coffee and baked pastries.
+                                   We make drinks using the best ingredients sourced from local producers. Come visit us today!
+                                   </p>
+
+                                   <a href="https://www.clover.com/online-ordering/ella-coffee-houston" id="homeContentBodyButton">See Our Menu</a>
+                              </div>
+
+                         </div>
+
                     </div>
+
 
                </div>
                {/* MAIN CONTENT END */}

@@ -41,12 +41,24 @@
      top: 55%;
      right: 15%;
      background-color: rgba(255, 255, 255, 0);
-     border: 1px solid white;
+     border: 1.5px solid rgb(94, 94, 94);
+     box-sizing: border-box;
      height: 50px;
      width: 200px;
      border-radius: 10px;
      color: white;
      transition: 0.3s;
+     animation: buttonAnimation alternate ease-in-out infinite 1s;
+}
+
+@keyframes buttonAnimation {
+     0% {
+          border-color: rgba(255, 255, 255, 0.966);
+     }
+
+     100% {
+          border-color: rgba(255, 255, 255, 0.243);
+     }
 }
 
 #orderNowHome:hover {
@@ -74,44 +86,60 @@
 #homeContent {
      background-color: rgb(17, 17, 17);
      width: 100%;
-     height: 500px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 15px;
-}
-
-#homeContentHeader {
-     height: 50%;
-     width: 40%;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     padding: 15px;
+     padding-bottom: 30px;
 }
 
-#homeContentTitle {
+#homeContentHeadBox {
+     height: 15%;
+     width: 100%;
+     text-align: center;
+}
+
+#homeContentBodyBox {
+     width: 100%;
+     height: 85%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#homeContentBody {
+     height: 350px;
+     width: 100%;
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: center;
+     align-items: center;
+}
+
+#homeContentBodyTitle {
      height: 30%;
-     width: 65%;
+     width: 105%;
      display: flex;
      align-items: center;
      justify-content: center;
-     font-size: 2rem;
+     
      color: black;
      text-align: center;
      color: white;
 }
 
-#homeContentTextBox {
-     height: 70%;
-     width: 100%;
+#homeContentBodyTextBox {
+     height: 100%;
+     width: 40%;
      display: flex;
+     flex-direction: column;
      align-items: center;
      justify-content: center;
      padding: 20px;
 }
 
-#homeContentText {
+#homeContentBodyText {
      width: 80%;
      height: 70%;
      color: white;
@@ -129,6 +157,26 @@
      width: 90%;
 }
 
+#homeContentBodyButton {
+     border: 1px solid white;
+     position: relative;
+     bottom: 10%;
+     height: 60px;
+     width: 250px;
+     border-radius: 5px;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     transition: 0.3s;
+}
+
+#homeContentBodyButton:hover {
+     background-color: rgba(255, 255, 255, 0.199);
+     cursor: pointer;
+}
+
 /* CONTENT END */
 
 /* LINK SECTION START */
@@ -137,7 +185,7 @@
      width: 100%;
      background-image: url('../../assets/home/crowdoutsidehouse.jpg');
      background-size: cover;
-     background-position-y: -550px;
+     background-position-y: -450px;
      background-repeat: no-repeat;
      background-blend-mode: overlay;
      background-color: rgba(0, 0, 0, 0.45);
@@ -189,7 +237,7 @@
 
      #coffeeVid {
      right: 750px;
-     bottom: 100px;
+     bottom: 50px;
      }
 
      #ellaCoffeeLogo {
@@ -213,22 +261,34 @@
           top: 37%;
      }
 
-     #homeContentHeader {
+     #homeContentBodyBox {
+          flex-direction: column;
+     }
+
+     #homeContentBody {
           width: 90%;
           height: 100%;
           padding-top: 25px;
+          flex-direction: column;
      }
 
-     #homeContentTitle {
+     #homeContentBodyTitle {
           width: 100%;
+          font-size: 1rem;
      }
 
-     #homeContentText {
+     #homeContentBodyTextBox {
+          width: 100%;
+          gap: 20px;
+     }
+
+     #homeContentBodyText {
           width: 100%;
      }
 
      #homeContentMapBox {
-          width: 100%;
+          width: 90vw;
+          padding-bottom: 25px;
      }
 
      #homeMap {
@@ -236,7 +296,10 @@
      }
      
      #linkSection {
-          background-position-y: 0;
+          background-position-y: 0px;
+          height: 300px;
+          background-size: cover;
+
      }
 
      #linkBox {
@@ -244,4 +307,6 @@
           width: 60%;
           flex-direction: column;
      }
+
+     
 }
